@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join the Society</title>
+  <link rel="stylesheet" href="register.css">
+</head>
+<body>
+
+  <header>
+    <h2 id="logo">AI &amp; Code Society</h2>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="media.html">About</a>
+      <a href="register.html" class="active">Join Society</a>
+      <span class="soon">Services</span>
+      <span class="soon">Portfolio</span>
+      <span class="soon">Contact</span>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <h1>Join the Society</h1>
+      <p class="intro">Fill in this form to become a member.</p>
+
+      <div class="field">
+        <label for="name" class="required">Full name</label>
+        <input type="text" id="name" name="name" required minlength="3" maxlength="40" placeholder="Your name">
+      </div>
+
+      <div class="field">
+        <label for="email" class="required">Email</label>
+        <input type="email" id="email" name="email" required placeholder="you@email.com">
+      </div>
+
+      <div class="field">
+        <label for="password" class="required">Password</label>
+        <input type="password" id="password" name="password" required minlength="8">
+      </div>
+
+      <div class="field">
+        <label for="dob">Date of birth</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+
+      <div class="field">
+        <label for="site">GitHub / website</label>
+        <input type="url" id="site" name="site" placeholder="https://">
+      </div>
+
+      <div class="field">
+        <label for="colour">Favourite colour</label>
+        <input type="color" id="colour" name="colour" value="#6C5CE7">
+      </div>
+
+      <div class="field">
+        <label for="semester">Semester (1 to 8)</label>
+        <input type="number" id="semester" name="semester" min="1" max="8" value="5">
+      </div>
+
+      <div class="field">
+        <label for="time">Preferred meeting time</label>
+        <input type="time" id="time" name="time">
+      </div>
+
+      <div class="field">
+        <label for="memberid">Member ID</label>
+        <input type="text" id="memberid" name="memberid" value="Auto generated" readonly>
+      </div>
+
+      <div class="field">
+        <label for="fee">Membership fee</label>
+        <input type="text" id="fee" name="fee" value="Free" disabled>
+      </div>
+
+      <div class="field">
+        <label for="skill">Skill level</label>
+        <input type="range" id="skill" name="skill" min="1" max="10">
+      </div>
+
+      <div class="field">
+        <label for="interest">Interest</label>
+        <select id="interest" name="interest">
+          <option>Machine learning</option>
+          <option selected>Web development</option>
+          <option>Data science</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="cv">Upload CV</label>
+        <input type="file" id="cv" name="cv">
+      </div>
+
+      <div class="field">
+        <label>Level</label>
+        <input type="radio" id="beginner" name="level" value="beginner">
+        <label for="beginner" class="inline">Beginner</label>
+        <input type="radio" id="advanced" name="level" value="advanced" checked>
+        <label for="advanced" class="inline">Advanced</label>
+      </div>
+
+      <div class="field full">
+        <label for="why">Why do you want to join?</label>
+        <textarea id="why" name="why" rows="4" maxlength="200"></textarea>
+      </div>
+
+      <div class="field full">
+        <input type="checkbox" id="agree" name="agree" checked>
+        <label for="agree" class="inline">I agree to the society rules</label>
+      </div>
+
+      <div class="field full">
+        <button type="submit">Register</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <p>AI &amp; Code Society | Lahore | 2026</p>
+  </footer>
+
+</body>
+</html>
