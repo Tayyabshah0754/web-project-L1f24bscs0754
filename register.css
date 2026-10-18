@@ -1,1 +1,202 @@
- c
+ * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2540;
+  background-color: aquamarine;
+  margin: 0;
+}
+
+/* Header (different style from the Home nav) */
+header {
+  background-color: #E6FAF6;
+  padding: 16px 40px;
+  border-bottom: 4px solid #14B8A6;
+  overflow: hidden;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  color: #0f8f82;
+}
+
+nav {
+  float: right;
+}
+
+nav a, nav .soon {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-left: 6px;
+  color: #1f2540;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+nav a:hover {
+  border-bottom-color: #FF7A59;
+}
+
+nav .active {
+  border-bottom-color: #14B8A6;
+  font-weight: bold;
+}
+
+nav .soon {
+  color: #9aa0bd;
+}
+
+/* Form box */
+main {
+  padding: 40px;
+}
+
+form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 32px;
+  overflow: hidden;           /* contains the floated fields */
+  background-color: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(20, 184, 166, 0.2);
+}
+
+/* Combinators */
+form > h1 {                   /* child */
+  margin-top: 0;
+  color: #6C5CE7;
+}
+
+h1 + p {                      /* adjacent sibling */
+  color: #4b5275;
+}
+
+form label {                  /* descendant */
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+label.inline {
+  display: inline;
+  font-weight: normal;
+  margin-right: 14px;
+}
+
+h1 ~ .field label {           /* general sibling */
+  color: #1f2540;
+}
+
+/* Pseudo-elements */
+.intro::first-letter {
+  font-size: 24px;
+  color: #FF7A59;
+}
+
+label.required::after {
+  content: " *";
+  color: #FF7A59;
+}
+
+::placeholder {
+  color: #aab0c8;
+}
+
+/* Layout with float */
+.field {
+  float: left;
+  width: 48%;
+  margin: 0 2% 16px 0;
+}
+
+.field.full {
+  float: none;
+  clear: both;
+  width: 100%;
+}
+
+/* Attribute selectors */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="url"],
+input[type="number"],
+input[type="time"],
+input[type="file"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #d9d4f5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input[type="color"] {
+  width: 100%;
+  height: 44px;
+  border: 2px solid #d9d4f5;
+  border-radius: 12px;
+}
+
+input[type="range"] {
+  width: 100%;
+}
+
+input[readonly] {
+  background-color: #F3EFFF;
+}
+
+input[disabled] {
+  background-color: #eeeeee;
+  color: #888888;
+}
+
+/* Pseudo-classes */
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: #6C5CE7;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6C5CE7;
+  background-color: #F3EFFF;
+}
+
+input:valid {
+  border-color: #14B8A6;
+}
+
+input:focus:invalid {
+  border-color: #FF7A59;
+}
+
+button {
+  background-color: #6C5CE7;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #14B8A6;
+}
+
+footer {
+  background-color: #E6FAF6;
+  text-align: center;
+  padding: 20px;
+}
