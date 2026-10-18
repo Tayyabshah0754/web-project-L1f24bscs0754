@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #1f2540;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+/* Header (different nav style from Home and Register) */
+header {
+  background-color: #FFF1EC;
+  padding: 16px 40px;
+  border-bottom: 4px solid #FF7A59;
+  overflow: hidden;
+}
+
+#logo {
+  float: left;
+  margin: 0;
+  color: #FF7A59;
+}
+
+nav {
+  float: right;
+}
+
+nav a, nav .soon {
+  display: inline-block;
+  padding: 8px 14px;
+  margin-left: 6px;
+  border-radius: 8px;
+  color: #1f2540;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #FFC93C;
+}
+
+nav .active {
+  background-color: #FF7A59;
+  color: #ffffff;
+}
+
+nav .soon {
+  color: #b3a59f;
+}
+
+/* Main */
+main {
+  padding: 40px;
+  overflow: hidden;           /* contains the floated boxes */
+}
+
+/* Banner with background image */
+.about-banner {
+  position: relative;
+  height: 180px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  background-image: url("images/about-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: #6C5CE7;  /* shows if image is missing */
+}
+
+.about-banner h1 {
+  margin: 0;
+  padding: 60px 30px;
+  color: #ffffff;
+}
+
+.banner-label {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: #FFC93C;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+/* Intro text with floated image */
+.about-intro {
+  overflow: hidden;
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.about-photo {
+  float: left;
+  width: 280px;
+  margin: 0 24px 10px 0;
+  border-radius: 20px;
+}
+
+/* Media */
+.media-box {
+  float: left;
+  width: 55%;
+  padding: 24px;
+  margin: 0 2% 20px 0;
+  background-color: #E8F1FF;
+  border-radius: 20px;
+}
+
+.media-box video {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+/* Lists */
+.list-box {
+  float: right;
+  width: 43%;
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.goals  { background-color: #F3EFFF; }
+.topics { background-color: #FFF1EC; }
+
+.list-box li {
+  line-height: 2;
+}
+
+/* Table */
+.table-box {
+  clear: both;
+  overflow: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #FF7A59;
+  color: #ffffff;
+  padding: 14px;
+  text-align: left;
+}
+
+td {
+  padding: 14px;
+  border-bottom: 1px solid #ece8ff;
+}
+
+tr:nth-child(even) td {
+  background-color: #FFF1EC;
+}
+
+footer {
+  background-color: #FFF1EC;
+  text-align: center;
+  padding: 20px;
+}
