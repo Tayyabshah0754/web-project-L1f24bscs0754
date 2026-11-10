@@ -1,0 +1,34 @@
+/* Portfolio page: extra styles only. Header, hero, cards and footer come from home.css */
+.stats {
+  padding: 30px 40px 0;
+  text-align: center;
+}
+
+.stat {
+  display: inline-block;
+  margin: 10px;
+  padding: 16px 32px;
+  border-radius: 20px;
+  background-color: #F3EFFF;
+  border: 2px solid #6C5CE7;
+}
+
+.stat strong {
+  display: block;
+  font-size: 28px;
+  color: #6C5CE7;
+}
+
+.label {
+  display: inline-block;
+  margin-top: 6px;
+  padding: 4px 12px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  font-size: 13px;
+}
+
+/* slightly narrower cards so three fit in a row on a laptop screen */
+.what-we-do .card {
+  width: 26%;
+}
