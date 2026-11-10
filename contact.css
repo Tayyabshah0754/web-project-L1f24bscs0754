@@ -1,0 +1,102 @@
+/* Contact page: extra styles only. Header, hero and footer come from home.css */
+* {
+  box-sizing: border-box;
+}
+
+.contact {
+  padding: 40px;
+  overflow: hidden;           /* contains the floated boxes */
+}
+
+.contact-form {
+  float: left;
+  width: 58%;
+  padding: 28px;
+  border-radius: 24px;
+  background-color: #F3EFFF;
+  border: 2px solid #6C5CE7;
+}
+
+.contact-form label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.contact-form label:first-child {
+  margin-top: 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid #d9d4f5;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #6C5CE7;
+  background-color: #F3EFFF;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #6C5CE7;
+  color: #ffffff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #14B8A6;
+}
+
+.contact-info {
+  float: right;
+  width: 38%;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #E6FAF6;
+  border: 2px solid #14B8A6;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+}
+
+.faq {
+  clear: both;
+  padding: 0 40px 40px;
+}
+
+details {
+  margin-bottom: 10px;
+  padding: 14px 18px;
+  background-color: #FFF1EC;
+  border: 2px solid #FF7A59;
+  border-radius: 14px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media (max-width: 700px) {
+  .contact-form, .contact-info {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
