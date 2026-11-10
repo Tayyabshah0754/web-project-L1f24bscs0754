@@ -1,0 +1,21 @@
+/* Services page: extra styles only. Header, hero, cards and footer come from home.css */
+.steps {
+  padding: 40px;
+  text-align: center;
+  background-color: #F3EFFF;
+}
+
+.steps ol {
+  display: inline-block;
+  text-align: left;
+  line-height: 2;
+}
+
+.steps a {
+  color: #6C5CE7;
+}
+
+/* slightly narrower cards so three fit in a row on a laptop screen */
+.what-we-do .card {
+  width: 26%;
+}
