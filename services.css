@@ -1,4 +1,6 @@
-/* Services page: extra styles only. Header, hero, cards and footer come from home.css */
+
+/* Services page */
+
 .steps {
   padding: 40px;
   text-align: center;
@@ -15,7 +17,63 @@
   color: #6C5CE7;
 }
 
-/* slightly narrower cards so three fit in a row on a laptop screen */
+/* Flexbox layout */
+
+.what-we-do {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+/* Service cards */
+
 .what-we-do .card {
-  width: 26%;
+  width: 30%;
+  margin: 0;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+}
+
+/* Card images */
+
+.what-we-do .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Transform and transition */
+
+.what-we-do .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(108, 92, 231, 0.2);
+}
+
+/* Card links */
+
+.what-we-do .card a {
+  display: inline-block;
+  color: #6C5CE7;
+  font-weight: bold;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.what-we-do .card a:hover {
+  color: #14B8A6;
+}
+
+@media (max-width: 768px) {
+  .what-we-do .card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .what-we-do .card {
+    width: 100%;
+  }
 }
