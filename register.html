@@ -21,7 +21,7 @@
   </header>
 
   <main>
-    <form action="#" method="post">
+    <form action="#" method="post" id="registerForm">
       <h1>Join the Society</h1>
       <p class="intro">Fill in this form to become a member.</p>
 
@@ -108,7 +108,8 @@
       </div>
 
       <div class="field full">
-        <input type="checkbox" id="agree" name="agree" checked>
+        <input type="checkbox" id="agree"
+       name="agree" required>
         <label for="agree" class="inline">I agree to the society rules</label>
       </div>
 
@@ -121,6 +122,6 @@
   <footer>
     <p>AI &amp; Code Society | Lahore | 2026</p>
   </footer>
-
+<script src="register.js"></script>
 </body>
 </html>
