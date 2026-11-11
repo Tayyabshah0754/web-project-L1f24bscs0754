@@ -16,6 +16,21 @@
   background-color: #F3EFFF;
   border: 2px solid #6C5CE7;
 }
+.about-section {
+  padding: 25px;
+  margin-bottom: 25px;
+  background-color: #F3EFFF;
+  border: 2px solid #6C5CE7;
+  border-radius: 20px;
+}
+
+.about-section h2 {
+  color: #6C5CE7;
+}
+
+.about-section p {
+  line-height: 1.7;
+}
 
 .contact-form label {
   display: block;
