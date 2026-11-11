@@ -1,7 +1,6 @@
-
 /* Portfolio page */
 
-/* Statistics section */
+/* Statistics */
 
 .stats {
   display: flex;
@@ -25,16 +24,19 @@
   color: #6C5CE7;
 }
 
-/* CSS Grid gallery */
+/* Project gallery using CSS Grid */
 
 .what-we-do {
-  padding: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
+  padding: 40px;
 }
 
-/* Project cards */
+.what-we-do h2 {
+  grid-column: 1 / -1;
+  text-align: center;
+}
 
 .project-card {
   background-color: #F3EFFF;
@@ -43,8 +45,6 @@
   overflow: hidden;
   animation: appear 1s ease;
 }
-
-/* Gallery images */
 
 .project-card img {
   width: 100%;
@@ -60,8 +60,6 @@
 .project-info h3 {
   color: #6C5CE7;
 }
-
-/* Project labels */
 
 .label {
   display: inline-block;
@@ -86,7 +84,7 @@
   }
 }
 
-/* First breakpoint */
+/* Tablet */
 
 @media (max-width: 768px) {
   .what-we-do {
@@ -94,7 +92,7 @@
   }
 }
 
-/* Second breakpoint */
+/* Mobile */
 
 @media (max-width: 480px) {
   .what-we-do {
